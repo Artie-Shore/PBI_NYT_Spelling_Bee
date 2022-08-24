@@ -40,7 +40,7 @@ Example 2:
   3. APPLE, L
   4. APPLE, E
 
-Amazing. This is the foundation I needed. I used this to generate a table of the unique words with their respective length and distinct character count, and created a similar table of words with every unique character that is part of that word (like Example 2 above). This provided me with a parent table that I neamed "Words_Header" (unique words that act as a unique IDs) and a child table named "Words" (the word or "ID" along with one of its disctinct letters, repeated for every distinct letter in the word).
+Amazing. This is the foundation I needed. I used this to generate a table of the unique words with their respective length and distinct character count, and created a similar table of words with every unique character that is part of that word (like Example 2 above). This provided me with a parent table named "Words_Header" (unique words that act as a unique IDs) and a child table named "Words" (the word or "ID" along with one of its disctinct letters, repeated for every distinct letter in the word).
 
 
 Possible Letters (the alphabet...): I know I need to select 7 letters and I want to have each in its own individual slicer, so I went ahead and created an alphabet table in the query editor and duplicated it until I had 7 alphabet tables (tables Letters_1 through Letters_7). 
