@@ -9,7 +9,7 @@ My wife and I battle for the quickest time on the NYT daily mini crossword among
 
 
 High Level logic: 
-If I have a list of all possible words, I could filter it to show words that MUST have the required letter and were comprised of some combination of the remaining 6 letters. I wanted it to work based on user input and update dynamically (as opposed to going in and editing the any logic each time). If I had a list of words, the distinct letters that make up those words, and 7 sperate "letter selection" tables to reference, I could use DAX to create a measure that calcualtes whether a word meets the criteria. 
+If I have a list of all possible words, I could filter it to show words that MUST have the required letter and were comprised of some combination of the remaining 6 letters. I wanted it to work based on user input and update dynamically (as opposed to going in and editing the logic each time). If I had a list of words, the distinct letters that make up those words, and 7 "letter selection" tables to reference, I could use DAX to create a measure that calculates whether a word meets the criteria. 
 
 Information I Needed: 
 1. List of possible words
