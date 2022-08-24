@@ -3,7 +3,7 @@ Using Power BI to crack the NYT Spelling Bee game
 
 Hello! 
 
-This document outlines my thought process and some high-level data modeling / DAX strategy used to "crack" the NYT Spelling Bee Game using a Power BI, but first, some background: 
+This document outlines my thought process and some high-level data modeling / DAX strategy used to "crack" the NYT Spelling Bee Game using Power BI, but first, some background: 
 
 My wife and I battle for the quickest time on the NYT daily mini crossword amoungst a small group of friends. It is a great time but my wife usually wins. The other day she showed me the Spelling Bee game that is also part of the NYT Games app (along with Wordle). The Spelling Bee game is much like Scrabble, but you MUST use the designated character and you are free to re-use any of the characters as needed. As she was trying to come up with words she had yet to use for that day's puzzle (to reach "genius" status) I began to think about how I could crack this game to reach "genius" status before her, just to flex. I could easily find a website that posted the answers but that felt a little cheap, so I decided to try my hand at building my own solution because in my mind that made it fair...
 
