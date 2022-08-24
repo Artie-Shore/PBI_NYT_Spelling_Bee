@@ -53,9 +53,9 @@ The DAX: I started by creating variables that calculate the number of instances 
 Example 1: 
 var has_1 = CALCULATE(COUNTROWS(Words), FILTER(Words, Words[Words_Split] = SELECTEDVALUE(Letters_1[Letter])))
 
-Since I removed duplicate letters for each word in the child word table, the value of the variable above for each word could only ever result in either 0 (the word does not have the selected letter) or 1 (the word has the letter!). I created this type of variable for letter tables 1 through 7. Summing the values of variables 1 through 7 (into a new variable called all_letters) let me know how many of my selected letters are present in the word. If the sum of those variables (all_letters) was 7, then all 7 selected letters were present. 
+Since I removed duplicate letters for each word in the child word table, the value of the variable above for each word could only ever result in either 0 (the word does not have the selected letter) or 1 (the word has the letter!). I created this type of variable for letter tables 1 through 7. Summing the values of variables 1 through 7 (into a new variable called all_letters) let me know how many of my selected letters are present in the word. If the sum of those variables (all_letters) was 7, then all 7 selected letters were present. From there I could rely on variable has_1 to determine which words contain the required letter. 
 
-This is great, but its not enough to know if the selected letters are present because I need to also exlude words that have letters that are not selected. Going back to the APPLE Example, if I select A, P, and E, but not L, I obviously don't want APPLE to show up. Accounting for this sounds more difficult than it actually is... I know that the variable all_letters provides the count of selected distinct letters in a given word. I also know that words comprised exclusively of combinations of the selected letters could only ever have a distinct character count equal to the value of the all_letters variable, because if the distinct character count for a word is > all_letters, that would imply that there MUST be some other letter in the word that we didn't count. Using the reliable APPLE example to explain... 
+This is great, but its not enough to know if the selected letters are present because I need to also exlude words that have letters that are not selected. Going back to the APPLE Example, if I select A, P, and E, but not L, I obviously don't want APPLE to show up. Accounting for this sounds more difficult than it actually is... I know that the variable all_letters provides the count of selected distinct letters in a given word. I also know that words comprised exclusively of combinations of the selected letters could only ever have a distinct character count equal to the value of the all_letters variable, because if the distinct character count for a word is > all_letters, that would imply that there MUST be some other letter in the word that I didn't count. Using the reliable APPLE example to explain... 
 
 Selected Letters: A,P,E
 
@@ -65,9 +65,7 @@ Example: [Word], [Length], [Distinct Characters], [Selected Letters Used]
   3. PEA, 3, 3, 3
 
 
-Adding a quick variable to calculate the distinct letters for the word and forming an IF statement based on this logic produced the "Show" measure that dictates whether a word in the parent table meets the criteria. 
-
-The "Show" measure was then combined with SUMMARIZE to produce a count based on the parent word table. 
+Adding a variable to calculate the distinct letters for each word and forming an IF statement based on all of this logic produced the "Show" measure that dictates whether a word in the parent table meets the game's criteria. The "Show" measure was then combined with SUMMARIZE to produce a count based on the parent word table, and from there it is all visuals, visuals, visuals.  
 
 Enjoy! 
 
