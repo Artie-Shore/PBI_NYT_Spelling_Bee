@@ -66,6 +66,6 @@ Selected Letters: A,P,E
   3. PEA, 3, 3, 3
 
 
-Adding a variable to calculate the distinct letters for each word and forming an IF statement based on all of this logic produced the "Show" measure that dictates whether a word in the parent table is a potential match. The "Show" measure was then combined with the SUMMARIZE function to produce a count based on the parent word table, and from there it was visuals, visuals, visuals.  
+I then added a variable to calculate the distinct letters for each word and formed an IF statement based on all of this logic to create the "Show" measure that dictates whether a word in the parent table is a potential match. The "Show" measure was then combined with the SUMMARIZE function to produce a count based on the parent word table, and from there it was visuals, visuals, visuals.  
 
 Enjoy! 
