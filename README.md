@@ -15,7 +15,7 @@ Information I needed:
 1. List of possible words
 2. Length of said words
 3. Count of distinct characters within said words
-4. The distinct letters used in said words (i.e. APPLE = {A,P,L,E}
+4. The distinct letters used in said words (i.e. APPLE = {A,P,L,E})
 5. Possible Letters (the alphabet)
 6. DAX Formula(s)
 
