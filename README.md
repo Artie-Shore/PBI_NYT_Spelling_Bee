@@ -23,7 +23,7 @@ Information I needed:
 List of possible words: I knew the rules were similar to Scrabble, so a Scrabble dictionary was the best place to start. There are some obscure Scrabble words that the Spelling Bee game does not recognize so if anything this list would be overkill. Luckily some righteous souls on Stack Overflow posted a list of words from the 2019 version of the Collins Scrabble Dictionary in .txt format. All I had to do was dump it into an .xls file. 
 
 
-Length of said words + Count of distinct characters within said words + The distinct letters used in said words: This is where it gets fun. Importing the word data into PBI allowed me to start manipulating with Power Querey. Adding a column that counted the word length and filtered out words that were < 4 characters was a good start. I needed a way to count distinct characters for each word in the list, so I created a custom column to copy the word, then split this custom column by position into new rows. So for the example APPLE, I would get 5 rows that looked like the following: 
+Length of said words + Count of distinct characters within said words + The distinct letters used in said words: This is where it gets fun. Importing the word data into PBI allowed me to start manipulating with Power Query. Adding a column that counted the word length and filtered out words that were < 4 characters was a good start. I needed a way to count distinct characters for each word in the list, so I created a custom column to copy the word, then split this custom column by position into new rows. So for the example APPLE, I would get 5 rows that looked like the following: 
 
 Example 1:
   1. APPLE, A
