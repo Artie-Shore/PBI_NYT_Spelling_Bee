@@ -3,9 +3,9 @@ Using Power BI to "crack" the New York Times Spelling Bee game
 
 Hello! 
 
-This document outlines my thought process and some high-level data modeling / DAX strategy used to "crack" the NYT Spelling Bee game using the magic of Power BI. But first, some background: 
+This document outlines my thought process and some high-level data modeling / DAX strategy needed to "crack" the NYT Spelling Bee game using the magic of Power BI. But first, some background: 
 
-My wife and I battle for the quickest time on the NYT Daily Mini Crossword amongst a small group of friends. I enjoy it but my wife usually wins. The other day she showed me the Spelling Bee game that is also part of the NYT Games app (along with Wordle). The Spelling Bee game is much like Scrabble, but you must use the designated character and you are free to re-use any of the characters as needed. As she was trying to come up with words she had yet to use for that day's puzzle (to reach "genius" status) I began to think about how I could crack this game to reach genius status before her and finally get a win. I could definitely find a website that posted the answers for the day but that felt a little cheap, so I decided to try my hand at building my own solution because in my mind that made it fair...
+My wife and I battle for the quickest time on the NYT Daily Mini Crossword amongst a small group of friends. I enjoy it, but my wife usually wins. The other day she showed me the Spelling Bee game that is also part of the NYT Games app (along with Wordle). The Spelling Bee game is much like Scrabble, but you must use the designated character and you are free to re-use any of the characters as needed. As she was trying to come up with words she had yet to use for that day's puzzle (to reach "genius" status) I began to think about how I could crack this game to reach genius status before her and finally get a win. I could definitely find a website that posted the answers for the day but that felt a little cheap, so I decided to try my hand at building my own solution because in my mind that made it fair...
 
 
 High level logic: 
