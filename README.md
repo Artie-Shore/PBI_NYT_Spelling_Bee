@@ -32,7 +32,7 @@ Example 1:
   4. APPLE, L
   5. APPLE, E
 
-Nice, but I wanted distinct characters. I went ahead and removed duplicates (so there is only 1 "APPLE, P" row): 
+Nice, but I needed distinct characters. I went ahead and removed duplicates (so there is only one "APPLE, P" row): 
 
 Example 2:
   1. APPLE, A
@@ -40,7 +40,7 @@ Example 2:
   3. APPLE, L
   4. APPLE, E
 
-This was the foundation I needed. I used this to generate a table of the unique words with their respective length and distinct character count, and created a similar table of words with every unique character that is part of that word (like Example 2 above). Creating two tables provided me with a parent table named "Words_Header" (unique words that act as a unique IDs) and a child table named "Words" (the word or "ID" along with one of its disctinct letters for every distinct letter in the word, like Example 2 above).
+This created the foundation I needed. I used this as a starting point to create a table of unique words with their respective length and distinct character count and a similar table of words with every unique character that is part of that word (like Example 2 above). These two tables provide a parent table named "Words_Header" (unique words that act as a unique IDs) and a child table named "Words" (the word or "ID" along with one of its disctinct letters for every distinct letter in the word, like Example 2 above).
 
 
 Possible Letters: I knew I needed to select 7 letters and I want to have each in its own individual slicer, so I went ahead and created an alphabet table in the query editor and duplicated it until I had 7 alphabet tables (tables Letters_1 through Letters_7).  
